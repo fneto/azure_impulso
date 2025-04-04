@@ -14,29 +14,29 @@
 #--------------------------------------------------------------------------
 module Azure; end
 
-require 'azure/core'
-require 'azure/blob/blob_service'
-require 'azure/queue/queue_service'
-require 'azure/service_bus/service_bus_service'
-require 'azure/service_bus/empty_rule_action'
-require 'azure/service_bus/sql_rule_action'
-require 'azure/service_bus/sql_filter'
-require 'azure/service_bus/true_filter'
-require 'azure/service_bus/correlation_filter'
-require 'azure/table/table_service'
-require 'azure/table/batch'
-require 'azure/table/query'
-require 'azure/core/utility'
-require 'azure/base_management/management_http_request'
-require 'azure/base_management/sql_management_http_request'
-require 'azure/base_management/base_management_service'
-require 'azure/virtual_machine_image_management/virtual_machine_image_management_service'
-require 'azure/virtual_machine_management/virtual_machine_management_service'
-require 'azure/storage_management/storage_management_service'
-require 'azure/cloud_service_management/cloud_service_management_service'
-require 'azure/base_management/location'
-require 'azure/sql_database_management/sql_database_management_service'
-require 'azure/virtual_network_management/virtual_network_management_service'
+require File.join(File.dirname(__FILE__), 'azure','core')
+require File.join(File.dirname(__FILE__), 'azure','blob','blob_service')
+require File.join(File.dirname(__FILE__), 'azure','queue','queue_service')
+require File.join(File.dirname(__FILE__), 'azure','service_bus','service_bus_service')
+require File.join(File.dirname(__FILE__), 'azure','service_bus','empty_rule_action')
+require File.join(File.dirname(__FILE__), 'azure','service_bus','sql_rule_action')
+require File.join(File.dirname(__FILE__), 'azure','service_bus','sql_filter')
+require File.join(File.dirname(__FILE__), 'azure','service_bus','true_filter')
+require File.join(File.dirname(__FILE__), 'azure','service_bus','correlation_filter')
+require File.join(File.dirname(__FILE__), 'azure','table','table_service')
+require File.join(File.dirname(__FILE__), 'azure','table','batch')
+require File.join(File.dirname(__FILE__), 'azure','table','query')
+require File.join(File.dirname(__FILE__), 'azure','core','utility')
+require File.join(File.dirname(__FILE__), 'azure','base_management','management_http_request')
+require File.join(File.dirname(__FILE__), 'azure','base_management','sql_management_http_request')
+require File.join(File.dirname(__FILE__), 'azure','base_management','base_management_service')
+require File.join(File.dirname(__FILE__), 'azure','virtual_machine_image_management','virtual_machine_image_management_service')
+require File.join(File.dirname(__FILE__), 'azure','virtual_machine_management','virtual_machine_management_service')
+require File.join(File.dirname(__FILE__), 'azure','storage_management','storage_management_service')
+require File.join(File.dirname(__FILE__), 'azure','cloud_service_management','cloud_service_management_service')
+require File.join(File.dirname(__FILE__), 'azure','base_management','location')
+require File.join(File.dirname(__FILE__), 'azure','sql_database_management','sql_database_management_service')
+require File.join(File.dirname(__FILE__), 'azure','virtual_network_management','virtual_network_management_service')
 
 # add some aliases for convenience
 Azure::BlobService = Azure::Blob::BlobService
